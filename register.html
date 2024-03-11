@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sky Booker | Login</title>
+    <title>Sky Booker | Register</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--===============================================================================================-->
@@ -75,7 +75,35 @@
               <i class="zmdi zmdi-landscape"></i>
             </span>
 
-            <span class="login100-form-title p-b-34 p-t-27"> Log in </span>
+            <span class="login100-form-title p-b-34 p-t-27">
+              Create your account
+            </span>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter first name"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+              />
+              <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Enter last name"
+            >
+              <input
+                class="input100"
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+              />
+              <span class="focus-input100" data-placeholder="&#xf207;"></span>
+            </div>
 
             <div
               class="wrap-input100 validate-input"
@@ -92,6 +120,19 @@
 
             <div
               class="wrap-input100 validate-input"
+              data-validate="Enter email"
+            >
+              <input
+                class="input100"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <span class="focus-input100" data-placeholder="&#xf1c5;"></span>
+            </div>
+
+            <div
+              class="wrap-input100 validate-input"
               data-validate="Enter password"
             >
               <input
@@ -100,25 +141,26 @@
                 name="pass"
                 placeholder="Password"
               />
+
               <span class="focus-input100" data-placeholder="&#xf191;"></span>
             </div>
 
-            <div class="contact100-form-checkbox">
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Confirm password"
+            >
               <input
-                class="input-checkbox100"
-                id="ckb1"
-                type="checkbox"
-                name="remember-me"
+                class="input100"
+                type="cofirmPassword"
+                name="cofirmPassword"
+                placeholder="Cofirm Password"
               />
-              <label class="label-checkbox100" for="ckb1"> Remember me </label>
+
+              <span class="focus-input100" data-placeholder="&#xf191;"></span>
             </div>
 
             <div class="container-login100-form-btn">
-              <button class="login100-form-btn">Login</button>
-            </div>
-
-            <div class="text-center p-t-90">
-              <a class="txt1" href="#"> Forgot Password? </a>
+              <button class="login100-form-btn">Create your account</button>
             </div>
           </form>
         </div>

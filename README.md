@@ -1,111 +1,61 @@
-## SkyBooker
+# SkyBooker - Flight Reservation System
 
-About SkyBooker
-SkyBooker is your ultimate travel companion, offering seamless flight booking services at your fingertips. In today's fast-paced world, finding the perfect flight can be a daunting task. That's where we come in. SkyBooker simplifies your travel experience by providing a user-friendly platform to compare and book flights from a wide range of airlines. Whether you're planning a business trip or a vacation, our mission is to make your journey as smooth as possible.
+SkyBooker is a comprehensive flight reservation system designed to simplify the booking process for both travelers and airlines. Built with a modern tech stack, SkyBooker offers a seamless user experience and robust backend functionality.
 
-## Branding
+## Features
 
-Headline: Fly Smart, Fly with SkyBooker
+- **Flight Search:** Users can easily search for flights based on various criteria such as date, destination, and number of passengers.
+- **Booking Management:** Users can book, view, modify, or cancel their flight reservations.
+- **User Registration:** Users can create and manage their accounts to streamline the booking process and view their travel history.
+- **Admin Panel:** Administrators can manage flights, schedules, and view reports on bookings and revenue.
+- **Responsive Design:** The system is designed to be responsive and accessible on various devices and screen sizes.
 
-Brand color: #a5d8ff(Sky Blue)
+## Technologies Used
 
-## SkyBooker Website Content
+- **Frontend:** HTML, CSS, SASS, Bootstrap
+- **Backend:** PHP (FlightPHP framework)
+- **Database:** MySQL
+- **API:** OpenAPI for integrating with external services and APIs
 
-## Summary
+## Installation
 
-Experience hassle-free flight booking with SkyBooker. We offer a wide range of options to suit your travel needs, ensuring you get the best deals on flights. Join millions of satisfied travelers who choose SkyBooker for their journeys!
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/yourusername/skybooker.git
+   ```
+2. **Navigate to the project directory:**
+   ```
+   cd skybooker
+   ```
+3. **Install dependencies:**
+   - Ensure you have PHP and MySQL installed on your system.
+   - Set up your database and import any necessary SQL files.
+4. **Configure your environment:**
+   - Update the database configuration in the `config.php` file with your database details.
+   - Set up any additional environment variables or configurations as needed.
+5. **Run the application:**
+   - Start your PHP server and navigate to the project URL in your browser.
 
-## SkyBooker Features
+## Usage
 
-Compare Flights: Access a wide range of airlines and compare prices to find the best deal.
-Easy Booking: Book your flight with just a few clicks. It's fast, easy, and secure.
-24/7 Customer Support: Our dedicated team is here to assist you at any time, ensuring a smooth travel experience.
-Flexible Options: Change or cancel your booking with ease. We understand that plans can change.
-User Account: Create an account for a personalized experience, manage your bookings, and access exclusive offers.
+- Users can register and log in to the system to start booking flights.
+- The flight search feature allows users to find flights that match their criteria.
+- Users can book, view, and manage their reservations through their user dashboard.
+- Administrators can access the admin panel to manage flights and view system reports.
 
-## How SkyBooker Works
+## Contributing
 
-\*\*\* Book your flight in 3 simple steps
+Contributions to SkyBooker are welcome! Please follow these steps to contribute:
 
-Search: Enter your travel details in our search form to find flights that match your criteria. Choose from various airlines and flight options to suit your needs.
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Commit your changes and push them to your fork.
+4. Submit a pull request to the main repository.
 
-Compare: View the search results and compare prices, timings, and airlines. Use filters to narrow down your choices and find the best flight for your trip.
+## License
 
-Book: Select your preferred flight and complete the booking process with our secure payment system. Receive a confirmation email with all your flight details and itinerary.
+SkyBooker is open-source software licensed under the [MIT License](LICENSE).
 
-## Login and Registration
+## Contact
 
-## Join the SkyBooker Community
-
-Register: Create your SkyBooker account to enjoy a personalized booking experience and access special offers.
-Login: Access your account to manage your bookings, view your travel history, and update your preferences.
-
-## SkyBooker for All Types of Travelers
-
-Business travelers
-Leisure travelers
-Solo travelers
-Family trips
-Group travel
-Popular Destinations
-
-## Explore top destinations with SkyBooker
-
-New York City
-Paris
-Tokyo
-Dubai
-London
-
-## Special Offers
-
-## Get the best deals on flights
-
-Exclusive discounts for SkyBooker members
-Early bird offers for advance bookings
-Last-minute deals for spontaneous trips
-
-## Customer Testimonials
-
-## Hear from our satisfied customers
-
-"Booking my flight with SkyBooker was a breeze. Their customer service is top-notch!" (John Doe)
-"I always find the best deals on SkyBooker. It's my go-to platform for all my travel needs." (Jane Smith)
-"SkyBooker made my family vacation planning so much easier. Highly recommend!" (Emily Johnson)
-
-## Partnerships and Affiliations
-
-We collaborate with leading airlines and travel partners to bring you the best options.
-
-## Contact Information
-
-Email: harun.musa@stu.ibu.edu.ba
-
-Social Profiles: Instagram, Facebook, Twitter (links not available yet)
-
-## Additional Links
-
-Create Account
-Sign In
-Mobile App
-About SkyBooker
-Customer Support
-Travel Tips
-Privacy & Terms
-
-#####
-
-## Sections
-
-- Navigation + logo
-- Hero
-- Featured In
-- Features
-- How it works
-- Login and Registration
-- Types of travelers
-- Popular Destinations
-- Testimonials + gallery
-- Pricing + features
-- CTA
-- Footer
+For any questions or feedback, please contact us at [harun.musa@stu.ibu.edu.ba](mailto:harun.musa@stu.ibu.edu.ba).
