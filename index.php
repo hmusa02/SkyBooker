@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 Flight::route('/', function(){
-    echo 'Hello Formula 1';
+    echo 'Hello SkyBooker';
 });
 
 Flight::start();
