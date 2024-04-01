@@ -7,44 +7,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="tpl/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="tpl/assets/css/main.css" />
     <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
+      ><link rel="stylesheet" href="tpl/assets/css/noscript.css"
     /></noscript>
   </head>
-  <body class="is-preload">
+  <body class="is-preload contact-page">
     <!-- Wrapper -->
     <div id="wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <a href="index.html" class="logo"
-          ><strong>Sky</strong> <span>Booker</span></a
-        >
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
 
-      <!-- Menu -->
-      <nav id="menu">
-        <ul class="links">
-          <li><a href="index.html">Home </a></li>
-
-          <li><a href="packages.html">Packages</a></li>
-
-          <li><a href="about-us.html">About Us</a></li>
-
-          <li class="active"><a href="contact.html">Contact Us</a></li>
-
-          <li><a href="login.html">Login</a></li>
-
-          <li><a href="register.html">Register</a></li>
-        </ul>
-      </nav>
-
-      <!-- Main -->
-      <div id="main" class="alt">
+      
         <!-- One -->
         <section id="one">
           <div class="inner">
@@ -61,13 +34,13 @@
 
       <!-- Contact -->
       <section id="contact">
-        <div class="inner">
+        <div class="inner contact-info">
           <section>
             <header class="major">
               <h2>Contact us</h2>
             </header>
 
-            <form method="post" action="#">
+            <form id="contact-form" class="login100-form validate-form" method="post" action="#">
               <div class="fields">
                 <div class="field half">
                   <label for="name">Name</label>
@@ -83,19 +56,10 @@
                 </div>
                 <div class="field">
                   <label for="message">Notes</label>
-                  <textarea name="message" id="message" rows="6"></textarea>
+                  <textarea name="message" id="message" rows="5"></textarea>
                 </div>
-
-                <div class="field half text-right">
-                  <ul class="actions">
-                    <li>
-                      <input
-                        type="submit"
-                        value="Send Message"
-                        class="primary"
-                      />
-                    </li>
-                  </ul>
+                <div class="container-login100-form-btn">
+                  <button type="submit" class="login100-form-btn" id="contact-submit">Send Message</button>
                 </div>
               </div>
             </form>
@@ -157,21 +121,51 @@
           </ul>
 
           <ul class="copyright">
-            <li>Copyright © 2020 Company Name - Template by:</li>
-            <li><a href="https://www.phpjabbers.com/">PHPJabbers.com</a></li>
+            <li>Copyright © 2024 SkyBooker</li>
+
           </ul>
         </div>
       </footer>
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="tpl/assets/js/jquery.min.js"></script>
+    <!-- <script src="tpl/assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="tpl/assets/js/jquery.scrolly.min.js"></script>
+    <script src="tpl/assets/js/jquery.scrollex.min.js"></script>
+    <script src="tpl/assets/js/browser.min.js"></script>
+    <script src="tpl/assets/js/breakpoints.min.js"></script>
+    <script src="tpl/assets/js/util.js"></script>
+    <script src="tpl/assets/js/main.js"></script>
+    <script>
+      const contactForm = document.getElementById("contact-form");
+      const contactButton = document.getElementById("contact-submit");
+
+// Add an event listener for the form submission
+  contactForm.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Extract the input values
+  const name = contactForm.elements["name"].value;
+  const email = contactForm.elements["email"].value;
+  const subject = contactForm.elements["subject"].value;
+  const message = contactForm.elements["message"].value;
+
+  // Log the input data
+  console.log("Name:", name);
+  console.log("Email:", email);
+  console.log("Subject:", subject);
+  console.log("Message:", message);
+
+  // Here you might want to send the data to a server
+  // ...
+
+  // Redirect to #home
+  setTimeout(() => {
+    window.location.href = "#home";
+  }, 1000);
+});
+
+    </script>
   </body>
 </html>

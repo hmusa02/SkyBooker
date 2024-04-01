@@ -8,76 +8,82 @@
     <link
       rel="icon"
       type="image/png"
-      href="login-style/images/icons/favicon.ico"
+      href="tpl/login-style/images/icons/favicon.ico"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/vendor/bootstrap/css/bootstrap.min.css"
+      href="tpl/login-style/vendor/bootstrap/css/bootstrap.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+      href="tpl/login-style/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/fonts/iconic/css/material-design-iconic-font.min.css"
+      href="tpl/login-style/fonts/iconic/css/material-design-iconic-font.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/vendor/animate/animate.css"
+      href="tpl/login-style/vendor/animate/animate.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/vendor/css-hamburgers/hamburgers.min.css"
+      href="tpl/login-style/vendor/css-hamburgers/hamburgers.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/vendor/animsition/css/animsition.min.css"
+      href="tpl/login-style/vendor/animsition/css/animsition.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/vendor/select2/select2.min.css"
+      href="tpl/login-style/vendor/select2/select2.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="login-style/vendor/daterangepicker/daterangepicker.css"
+      href="tpl/login-style/vendor/daterangepicker/daterangepicker.css"
     />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="login-style/css/util.css" />
-    <link rel="stylesheet" type="text/css" href="login-style/css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="tpl/login-style/css/util.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="tpl/login-style/css/main.css"
+    />
     <!--===============================================================================================-->
   </head>
   <body>
     <div class="limiter">
       <div
         class="container-login100"
-        style="background-image: url('login-style/images/bg-01.jpg')"
+        style="background-image: url('tpl/login-style/images/bg-01.jpg')"
       >
         <div class="wrap-login100">
-          <form class="login100-form validate-form">
+          <form class="login100-form validate-form" id="reservation-form">
             <span class="login100-form-logo">
               <i class="zmdi zmdi-landscape"></i>
             </span>
 
-            <span class="login100-form-title p-b-34 p-t-27">
-              Create your account
-            </span>
+            <span class="login100-form-title p-b-34 p-t-27"> Reservation </span>
 
             <div
               class="wrap-input100 validate-input"
@@ -133,34 +139,36 @@
 
             <div
               class="wrap-input100 validate-input"
-              data-validate="Enter password"
+              data-validate="Enter Destination"
             >
               <input
                 class="input100"
-                type="password"
-                name="pass"
-                placeholder="Password"
+                type="email"
+                name="email"
+                placeholder="Enter Destination"
               />
 
-              <span class="focus-input100" data-placeholder="&#xf191;"></span>
+              <span class="focus-input100" data-placeholder="&#xf1c5;"></span>
             </div>
 
             <div
               class="wrap-input100 validate-input"
-              data-validate="Confirm password"
+              data-validate="Enter Date"
             >
               <input
                 class="input100"
                 type="cofirmPassword"
                 name="cofirmPassword"
-                placeholder="Cofirm Password"
+                placeholder="Enter Date"
               />
 
-              <span class="focus-input100" data-placeholder="&#xf191;"></span>
+              <span class="focus-input100" data-placeholder="&#xf1c5;"></span>
             </div>
 
             <div class="container-login100-form-btn">
-              <button class="login100-form-btn">Create your account</button>
+              <button class="login100-form-btn" id="reservation-btn">
+                Confirm Reservation
+              </button>
             </div>
           </form>
         </div>
@@ -170,20 +178,49 @@
     <div id="dropDownSelect1"></div>
 
     <!--===============================================================================================-->
-    <script src="login-style/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="tpl/login-style/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
-    <script src="login-style/vendor/animsition/js/animsition.min.js"></script>
+    <script src="tpl/login-style/vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
-    <script src="login-style/vendor/bootstrap/js/popper.js"></script>
-    <script src="login-style/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="tpl/login-style/vendor/bootstrap/js/popper.js"></script>
+    <script src="tpl/login-style/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
-    <script src="login-style/vendor/select2/select2.min.js"></script>
+    <script src="tpl/login-style/vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
-    <script src="login-style/vendor/daterangepicker/moment.min.js"></script>
-    <script src="login-style/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="tpl/login-style/vendor/daterangepicker/moment.min.js"></script>
+    <script src="tpl/login-style/vendor/daterangepicker/daterangepicker.js"></script>
     <!--===============================================================================================-->
-    <script src="login-style/vendor/countdowntime/countdowntime.js"></script>
+    <script src="tpl/login-style/vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+    <script src="tpl/js/main.js"></script>
+    <script>
+      // Target the form and the reservation button
+      const reservationForm = document.getElementById("reservation-form");
+      const reservationButton = document.getElementById("reservation-btn");
+
+      // Add an event listener for the form submission
+      reservationForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Extract the input values
+        const firstName = reservationForm.elements["firstName"].value;
+        const lastName = reservationForm.elements["lastName"].value;
+        const username = reservationForm.elements["username"].value;
+        const email = reservationForm.elements["email"].value;
+        const destination = reservationForm.elements["email"].value;
+        const date = reservationForm.elements["cofirmPassword"].value;
+
+        // Log the input data
+        console.log("First Name:", firstName);
+        console.log("Last Name:", lastName);
+        console.log("Username:", username);
+        console.log("Email:", email);
+        console.log("Destination:", destination);
+        console.log("Date:", date);
+
+        // Redirect to #home
+        window.location.href = "#home";
+      });
+    </script>
   </body>
 </html>
