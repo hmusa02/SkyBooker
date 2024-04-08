@@ -7,42 +7,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="tpl/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="tpl/assets/css/main.css" />
     <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
+      ><link rel="stylesheet" href="tpl/assets/css/noscript.css"
     /></noscript>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <a href="index.html" class="logo"
-          ><strong>Sky</strong> <span>Booker</span></a
-        >
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
-
-      <!-- Menu -->
-      <nav id="menu">
-        <ul class="links">
-          <li class="active"><a href="index.html">Home </a></li>
-
-          <li><a href="packages.html">Packages</a></li>
-
-          <li><a href="about-us.html">About Us</a></li>
-
-          <li><a href="contact.html">Contact Us</a></li>
-
-          <li><a href="login.html">Login</a></li>
-
-          <li><a href="register.html">Register</a></li>
-        </ul>
-      </nav>
-
       <!-- Banner -->
       <section id="banner" class="major">
         <div class="inner">
@@ -56,9 +29,7 @@
             </p>
             <ul class="actions">
               <li>
-                <a href="contact.html" class="button next scrolly"
-                  >Contact us</a
-                >
+                <a href="#contact" class="button next scrolly">Contact us</a>
               </li>
             </ul>
           </div>
@@ -72,7 +43,7 @@
         <section class="tiles">
           <article>
             <span class="image">
-              <img src="images/paris.jpg" alt="" />
+              <img src="tpl/images/paris.jpg" alt="" />
             </span>
 
             <header class="major">
@@ -89,7 +60,7 @@
               </p>
 
               <div class="major-actions">
-                <a href="package-details.html" class="button small next"
+                <a href="#package-details" class="button small next"
                   >View Package</a
                 >
               </div>
@@ -98,7 +69,7 @@
 
           <article>
             <span class="image">
-              <img src="images/sarajevo.jpg" alt="" />
+              <img src="tpl/images/sarajevo.jpg" alt="" />
             </span>
 
             <header class="major">
@@ -115,7 +86,7 @@
               </p>
 
               <div class="major-actions">
-                <a href="package-details.html" class="button small next"
+                <a href="#package-details" class="button small next"
                   >View Package</a
                 >
               </div>
@@ -124,7 +95,7 @@
 
           <article>
             <span class="image">
-              <img src="images/newyork.jpg" alt="" />
+              <img src="tpl/images/newyork.jpg" alt="" />
             </span>
 
             <header class="major">
@@ -141,7 +112,7 @@
               </p>
 
               <div class="major-actions">
-                <a href="package-details.html" class="button small next"
+                <a href="#package-details" class="button small next"
                   >View Package</a
                 >
               </div>
@@ -150,7 +121,7 @@
 
           <article>
             <span class="image">
-              <img src="images/berlin.jpg" alt="" />
+              <img src="tpl/images/berlin.jpg" alt="" />
             </span>
 
             <header class="major">
@@ -167,7 +138,7 @@
               </p>
 
               <div class="major-actions">
-                <a href="package-details.html" class="button small next"
+                <a href="#package-details" class="button small next"
                   >View Package</a
                 >
               </div>
@@ -176,7 +147,7 @@
 
           <article>
             <span class="image">
-              <img src="images/tokyo.jpg" alt="" />
+              <img src="tpl/images/tokyo.jpg" alt="" />
             </span>
 
             <header class="major">
@@ -193,7 +164,7 @@
               </p>
 
               <div class="major-actions">
-                <a href="package-details.html" class="button small next"
+                <a href="#package-details" class="button small next"
                   >View Package</a
                 >
               </div>
@@ -202,7 +173,7 @@
 
           <article>
             <span class="image">
-              <img src="images/rim.jpg" alt="" />
+              <img src="tpl/images/rim.jpg" alt="" />
             </span>
 
             <header class="major">
@@ -219,7 +190,7 @@
               </p>
 
               <div class="major-actions">
-                <a href="package-details.html" class="button small next"
+                <a href="#package-details" class="button small next"
                   >View Package</a
                 >
               </div>
@@ -234,7 +205,9 @@
               <h2>About us</h2>
             </header>
             <ul class="actions">
-              <li><a href="about-us.html" class="button next">Read more</a></li>
+              <li>
+                <a href="#about-us" class="button next">Read more</a>
+              </li>
             </ul>
           </div>
         </section>
@@ -246,33 +219,15 @@
               <h2>Testimonials</h2>
             </header>
             <div class="row">
-              <div class="col-6">
-                <p>
-                  <em
-                    >"I recently booked a flight to Paris with SkyBooker, and I
-                    couldn't be happier with the experience. Their website was
-                    easy to navigate, and I found the perfect flight at a great
-                    price. The customer service team was also very helpful when
-                    I needed to adjust my travel dates. I'll definitely be using
-                    SkyBooker for all my future trips."</em
-                  >
-                </p>
-                <p><strong>- John Doe</strong></p>
+              <div class="col-6 user-container" id="user1-container">
+                <!-- User 1 data will be inserted here -->
               </div>
 
-              <div class="col-6">
-                <p>
-                  <em
-                    >"SkyBooker has been my go-to for booking flights for the
-                    past year. Their selection is unbeatable, and I love how
-                    easy it is to compare prices and options. I've recommended
-                    them to all my friends and family, and they've all had
-                    similarly positive experiences."</em
-                  >
-                </p>
-                <p><strong>- Jack Smith</strong></p>
+              <div class="col-6 user-container" id="user2-container">
+                <!-- User 2 data will be inserted here -->
               </div>
             </div>
+
             <ul class="actions"></ul>
           </div>
         </section>
@@ -312,13 +267,41 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="tpl/assets/js/jquery.min.js"></script>
+    <!-- <script src="tpl/assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="tpl/assets/js/jquery.scrolly.min.js"></script>
+    <script src="tpl/assets/js/jquery.scrollex.min.js"></script>
+    <script src="tpl/assets/js/browser.min.js"></script>
+    <script src="tpl/assets/js/breakpoints.min.js"></script>
+    <script src="tpl/assets/js/util.js"></script>
+    <script src="tpl/assets/js/main.js"></script>
+    <script>
+      fetch("https://dummyjson.com/users")
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          const users = data.users;
+          const firstTwoUsers = users.slice(0, 2); // Get the first two users
+
+          // Display the first user's data
+          const user1Container = document.getElementById("user1-container");
+          user1Container.innerHTML = `
+            <img src="${firstTwoUsers[0].image}" alt="User Image">
+            <p class="user-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+            <p class="user-name">${firstTwoUsers[0].firstName} ${firstTwoUsers[0].lastName}</p>
+            <p>Email: ${firstTwoUsers[0].email}</p>
+          `;
+
+          // Display the second user's data
+          const user2Container = document.getElementById("user2-container");
+          user2Container.innerHTML = `
+            <img src="${firstTwoUsers[1].image}" alt="User Image">
+            <p class="user-quote">"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+            <p class="user-name">${firstTwoUsers[1].firstName} ${firstTwoUsers[1].lastName}</p>
+            <p>Email: ${firstTwoUsers[1].email}</p>
+          `;
+        })
+        .catch((e) => console.error(e));
+    </script>
   </body>
 </html>
