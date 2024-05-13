@@ -137,35 +137,5 @@
     <script src="tpl/assets/js/breakpoints.min.js"></script>
     <script src="tpl/assets/js/util.js"></script>
     <script src="tpl/assets/js/main.js"></script>
-    <script>
-      const contactForm = document.getElementById("contact-form");
-      const contactButton = document.getElementById("contact-submit");
-
-// Add an event listener for the form submission
-  contactForm.addEventListener("submit", function (event) {
-  event.preventDefault(); // Prevent the default form submission
-
-  // Extract the input values
-  const name = contactForm.elements["name"].value;
-  const email = contactForm.elements["email"].value;
-  const subject = contactForm.elements["subject"].value;
-  const message = contactForm.elements["message"].value;
-
-  // Log the input data
-  console.log("Name:", name);
-  console.log("Email:", email);
-  console.log("Subject:", subject);
-  console.log("Message:", message);
-
-  // Here you might want to send the data to a server
-  // ...
-
-  // Redirect to #home
-  setTimeout(() => {
-    window.location.href = "#home";
-  }, 1000);
-});
-
-    </script>
   </body>
 </html>

@@ -275,33 +275,5 @@
     <script src="tpl/assets/js/breakpoints.min.js"></script>
     <script src="tpl/assets/js/util.js"></script>
     <script src="tpl/assets/js/main.js"></script>
-    <script>
-      fetch("https://dummyjson.com/users")
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-          const users = data.users;
-          const firstTwoUsers = users.slice(0, 2); // Get the first two users
-
-          // Display the first user's data
-          const user1Container = document.getElementById("user1-container");
-          user1Container.innerHTML = `
-            <img src="${firstTwoUsers[0].image}" alt="User Image">
-            <p class="user-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-            <p class="user-name">${firstTwoUsers[0].firstName} ${firstTwoUsers[0].lastName}</p>
-            <p>Email: ${firstTwoUsers[0].email}</p>
-          `;
-
-          // Display the second user's data
-          const user2Container = document.getElementById("user2-container");
-          user2Container.innerHTML = `
-            <img src="${firstTwoUsers[1].image}" alt="User Image">
-            <p class="user-quote">"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            <p class="user-name">${firstTwoUsers[1].firstName} ${firstTwoUsers[1].lastName}</p>
-            <p>Email: ${firstTwoUsers[1].email}</p>
-          `;
-        })
-        .catch((e) => console.error(e));
-    </script>
   </body>
 </html>

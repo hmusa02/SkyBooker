@@ -73,8 +73,8 @@ $(document).ready(function () {
     },
   });
   app.route({
-    view: "registration",
-    load: "registration.html",
+    view: "register",
+    load: "register.html",
     onCreate: function () {
       console.log("Creating registration");
     },
