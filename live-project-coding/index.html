@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SkyBooker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/spapp.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/css/about-us.css" />
+    <link rel="stylesheet" href="./assets/css/packages.css" />
+    <link rel="stylesheet" href="./assets/css/package-details.css" />
+    <link rel="stylesheet" href="./assets/css/reservation.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/register.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+
+    <script src="./assets/js/jquery-3.1.0.min.js"></script>
+    <script src="./assets/js/jquery.spapp.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script src="./utils/utils.js"></script>
+    <script src="./utils/form_validation.js"></script>
+    <script src="./utils/rest_client.js"></script>
+    <script src="./utils/constants.js"></script>
+
+    <script>
+      Utils.init_spapp();
+    </script>
+  </head>
+
+  <body>
+    <nav role="navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#package-details">Package Details</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main id="spapp" role="main">
+      <section id="home" data-load="pages/home.html"></section>
+      <section id="about-us" data-load="pages/about-us.html"></section>
+      <section id="packages" data-load="pages/packages.html"></section>
+      <section
+        id="package-details"
+        data-load="pages/package-details.html"
+      ></section>
+      <section id="reservation" data-load="pages/reservation.html"></section>
+      <section id="login" data-load="pages/login.html"></section>
+      <section id="register" data-load="pages/register.html"></section>
+      <section id="contact" data-load="pages/contact.html"></section>
+    </main>
+  </body>
+</html>

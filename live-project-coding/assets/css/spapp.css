@@ -1,0 +1,21 @@
+/* Skrivanje svih sekcija */
+main#spapp > section {
+  display: none;
+}
+
+/* Prikazivanje aktivne sekcije */
+main#spapp > section.active {
+  display: block;
+}
+
+/* spapp.css */
+
+/* Example styles */
+section {
+  margin: 20px 0;
+}
+
+section h1 {
+  font-size: 24px;
+  color: #2c3e50;
+}

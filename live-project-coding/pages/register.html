@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../assets/css/register.css" />
+  </head>
+  <body>
+    <section id="register">
+      <h1>Create Your Account</h1>
+      <form id="add-user-form" action="/submit-registration" method="post">
+        <div class="form-group">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" required />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastr"></script>
+    <script src="../utils/constants.js"></script>
+    <script src="../utils/form_validation.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#add-user-form").submit(function (e) {
+          e.preventDefault();
+          var formData = $(this).serialize();
+          Utils.block_ui("#register");
+
+          $.ajax({
+            url: "/submit-registration", // URL za slanje POST zahteva
+            type: "POST",
+            data: formData,
+            success: function (response) {
+              toastr.success("Registration successful!");
+              Utils.unblock_ui("#register");
+            },
+            error: function (xhr) {
+              toastr.error("Error: " + xhr.responseText);
+              Utils.unblock_ui("#register");
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
